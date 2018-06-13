@@ -1,10 +1,9 @@
 languageCode = "en-us"
-title = "Cupper"
-baseURL = "https://thepaciellogroup.github.io/cupper/"
+title = "Linkfire Frontend Guidelines"
+baseURL = "https://getlinkfire.github.io/frontend/"
 canonifyURLs = true
 theme = "cupper"
 publishDir = "docs"
 
 [params]
   description = "Documentation for the **Cupper** documentation builder, built with **Cupper** itself."
-  codePenUser = "Heydon"
