@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data on Linkfire Frontend Guidelines</title>
+    <link>https://getlinkfire.github.io/frontend/tags/data/</link>
+    <description>Recent content in Data on Linkfire Frontend Guidelines</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://getlinkfire.github.io/frontend/tags/data/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Data Loading</title>
+      <link>https://getlinkfire.github.io/frontend/patterns/ember/data/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://getlinkfire.github.io/frontend/patterns/ember/data/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

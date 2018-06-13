@@ -26,8 +26,21 @@
   </url>
   
   <url>
+    <loc>https://getlinkfire.github.io/frontend/tags/data/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://getlinkfire.github.io/frontend/patterns/ember/data/</loc>
+  </url>
+  
+  <url>
     <loc>https://getlinkfire.github.io/frontend/tags/ember/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://getlinkfire.github.io/frontend/patterns/ember/</loc>
   </url>
   
   <url>
@@ -37,6 +50,10 @@
   <url>
     <loc>https://getlinkfire.github.io/frontend/tags/linting/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://getlinkfire.github.io/frontend/patterns/linting/</loc>
   </url>
   
   <url>
