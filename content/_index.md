@@ -1,5 +1,5 @@
 +++
-title = "The Name Of This Project/Site"
+title = "Linkfire Frontend Guidelines"
 +++
 
-This is your homepage. These are the contents of the `index.md` file, found in your `content` folder.
+This document contains the style guide for front end development at Linkfire. Use this document as a reference when you code and when you do pull request reviewing.

@@ -6,4 +6,4 @@ theme = "cupper"
 publishDir = "docs"
 
 [params]
-  description = "Documentation for the **Cupper** documentation builder, built with **Cupper** itself."
+  description = "Frontend Guidelines documentation used at Linkfire"
