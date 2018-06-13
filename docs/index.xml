@@ -1,14 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>The Name Of This Project/Site on Linkfire Frontend Guidelines</title>
+    <title>Linkfire Frontend Guidelines</title>
     <link>https://getlinkfire.github.io/frontend/</link>
-    <description>Recent content in The Name Of This Project/Site on Linkfire Frontend Guidelines</description>
+    <description>Recent content on Linkfire Frontend Guidelines</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
 	<atom:link href="https://getlinkfire.github.io/frontend/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Components</title>
+      <link>https://getlinkfire.github.io/frontend/patterns/ember/components/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://getlinkfire.github.io/frontend/patterns/ember/components/</guid>
+      <description>The following are rules and guidelines for developing components in Ember.js at Linkfire.
+Named arguments Always use named arguments when passing values to a component.
+Example: You have a component that displays cool employees. It will display the employee name and their catchphrase like this:
+{{cool-employees name=“Theo” catchphrase=&amp;quot;Huh, oh, wait, wat&amp;quot;}}
+Now, in the component you can access the named arguments like this:
+Meet {{@name}}, his catchphrase is {{@catchphrase}}</description>
+    </item>
     
     <item>
       <title>Cupper</title>
@@ -20,14 +34,21 @@
     </item>
     
     <item>
-      <title>My First Pattern File</title>
-      <link>https://getlinkfire.github.io/frontend/patterns/pattern/</link>
+      <title>Linting</title>
+      <link>https://getlinkfire.github.io/frontend/patterns/linting/linting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://getlinkfire.github.io/frontend/patterns/pattern/</guid>
-      <description>You can just write markdown here. But don&amp;rsquo;t forget there are lots of shortcodes to help you with writing and showing off code too. See the documentation for Cupper for full details.
-   Here&amp;rsquo;s an example of a note shortcode for adding little &amp;ldquo;oh and also&amp;rdquo; notes to your patterns&amp;rsquo; documentation.
-  </description>
+      <guid>https://getlinkfire.github.io/frontend/patterns/linting/linting/</guid>
+      <description>Soon</description>
+    </item>
+    
+    <item>
+      <title>The Frontend Architecture</title>
+      <link>https://getlinkfire.github.io/frontend/patterns/architecture/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://getlinkfire.github.io/frontend/patterns/architecture/</guid>
+      <description>Coming soon.</description>
     </item>
     
   </channel>

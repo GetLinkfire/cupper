@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="canonical" href="https://getlinkfire.github.io/frontend/print-version/">
+    <link rel="canonical" href="https://getlinkfire.github.io/frontend/patterns/linting/linting/">
     <link rel="apple-touch-icon" sizes="57x57" href="https://getlinkfire.github.io/frontend/images/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="https://getlinkfire.github.io/frontend/images/apple-touch-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="https://getlinkfire.github.io/frontend/images/apple-touch-icon-72x72.png">
@@ -30,12 +30,14 @@
     </style>
     <title>
       
-  Linkfire Frontend Guidelines
-
+        Linting | Linkfire Frontend Guidelines
+      
     </title>
     
   </head>
   <body>
+    
+      <a href="#main">skip to content</a>
     
     <svg style="display: none">
   <symbol id="bookmark" viewBox="0 0 40 50">
@@ -126,7 +128,7 @@
  </symbol>
 </svg>
 
-    <div class="wrapper print-version">
+    <div class="wrapper ">
         <header class="intro-and-nav" role="banner">
           <div>
             <div class="intro">
@@ -136,120 +138,101 @@
               <p class="library-desc">
                 Frontend Guidelines documentation used at Linkfire
                 
+                  <a class="print" href="https://getlinkfire.github.io/frontend/print-version">
+                    <svg viewBox="0 0 35 45" aria-hidden="true" focusable="false">
+                      <use xlink:href="#doc"></use>
+                    </svg>Print version
+                 
                </a>
               </p>
               
-                <p class="toc-link">
-                  <span aria-hidden="true">&#x2193;</span>
-                  <a href="#toc">Table of contents</a>
-                  <span aria-hidden="true">&#x2193;</span>
-                </p>
-              
             </div>
             
-
-
+              <nav id="patterns-nav" class="patterns" role="navigation">
+                <h2 class="vh">Main navigation</h2>
+                <button id="menu-button" aria-expanded="false">
+                  <svg viewBox="0 0 50 50" aria-hidden="true" focusable="false">
+                    <use xlink:href="#menu"></use>
+                  </svg>
+                  Menu
+                </button>
+                
+                
+                  <ul id="patterns-list">
+                    
+                      <li class="pattern">
+                        <a href="https://getlinkfire.github.io/frontend/patterns/ember/components/" >
+                          <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
+                            <use xlink:href="#bookmark"></use>
+                          </svg>
+                          <span class="text">Components</span>
+                        </a>
+                      </li>
+                    
+                      <li class="pattern">
+                        <a href="https://getlinkfire.github.io/frontend/patterns/linting/linting/" aria-current="page">
+                          <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
+                            <use xlink:href="#bookmark"></use>
+                          </svg>
+                          <span class="text">Linting</span>
+                        </a>
+                      </li>
+                    
+                      <li class="pattern">
+                        <a href="https://getlinkfire.github.io/frontend/patterns/architecture/" >
+                          <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
+                            <use xlink:href="#bookmark"></use>
+                          </svg>
+                          <span class="text">The Frontend Architecture</span>
+                        </a>
+                      </li>
+                    
+                    
+                  </ul>
+                
+              </nav>
+            
           </div>
         </header>
       <div class="main-and-footer">
         <div>
           
   <main id="main">
-    <nav id="toc" class="toc patterns" aria-labelledby="toc-heading">
-      <h2 id="toc-heading">Table of contents</h2>
-      
-      
-        <ul id="patterns-list">
+    <h1>
+      <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+        <use xlink:href="#bookmark"></use>
+      </svg>
+      Linting
+    </h1>
+    
+      <div class="tags">
+        <strong aria-hidden="true">Tags: </strong>
+        <ul aria-label="tags">
           
-            <li class="pattern">
-              <a href="#components" >
-                <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
-                  <use xlink:href="#bookmark"></use>
-                </svg>
-                <span class="text">Components</span>
-              </a>
+            <li>
+              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+                <use xlink:href="#tag"></use>
+              </svg>
+              <a href="https://getlinkfire.github.io/frontend/tags/linting">linting</a>
             </li>
           
-            <li class="pattern">
-              <a href="#linting" >
-                <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
-                  <use xlink:href="#bookmark"></use>
-                </svg>
-                <span class="text">Linting</span>
-              </a>
+            <li>
+              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+                <use xlink:href="#tag"></use>
+              </svg>
+              <a href="https://getlinkfire.github.io/frontend/tags/ember">ember</a>
             </li>
-          
-            <li class="pattern">
-              <a href="#the-frontend-architecture" >
-                <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
-                  <use xlink:href="#bookmark"></use>
-                </svg>
-                <span class="text">The Frontend Architecture</span>
-              </a>
-            </li>
-          
           
         </ul>
-      
-    </nav>
+      </div>
     
     
       
-        <div class="pattern-section">
-          <h1 id="components" tabindex="-1">
-            <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
-              <use xlink:href="#bookmark"></use>
-            </svg>
-            Components
-          </h1>
-          
 
-<p>The following are rules and guidelines for developing components in Ember.js at Linkfire.</p>
 
-<h2 id="named-arguments">Named arguments</h2>
-
-<p>Always use named arguments when passing values to a component.</p>
-
-<p>Example: You have a component that displays cool employees. It will display the employee name and their catchphrase like this:</p>
-
-<p><code>{{cool-employees name=“Theo” catchphrase=&quot;Huh, oh, wait, wat&quot;}}</code></p>
-
-<p>Now, in the component you can access the named arguments like this:</p>
-
-<p><code>Meet {{@name}}, his catchphrase is {{@catchphrase}}</code></p>
-
-<p>instead of</p>
-
-<p><code>Meet {{name}}, his catchphrase is {{catchphrase}}</code></p>
-
-<p>This provides more clarity of the template and makes it very easy to see what is a named argument and what is not.</p>
-
-        </div>
-      
-        <div class="pattern-section">
-          <h1 id="linting" tabindex="-1">
-            <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
-              <use xlink:href="#bookmark"></use>
-            </svg>
-            Linting
-          </h1>
-          <p>Soon</p>
-
-        </div>
-      
-        <div class="pattern-section">
-          <h1 id="the-frontend-architecture" tabindex="-1">
-            <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
-              <use xlink:href="#bookmark"></use>
-            </svg>
-            The Frontend Architecture
-          </h1>
-          <p>Coming soon.</p>
-
-        </div>
-      
-      
     
+    <p>Soon</p>
+
   </main>
 
           <footer role="contentinfo">

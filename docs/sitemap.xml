@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://getlinkfire.github.io/frontend/tags/another-tag/</loc>
+    <loc>https://getlinkfire.github.io/frontend/tags/architecture/</loc>
     <priority>0</priority>
   </url>
   
@@ -13,16 +13,34 @@
   </url>
   
   <url>
-    <loc>https://getlinkfire.github.io/frontend/print-version/</loc>
-  </url>
-  
-  <url>
-    <loc>https://getlinkfire.github.io/frontend/tags/example-tag/</loc>
+    <loc>https://getlinkfire.github.io/frontend/tags/components/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://getlinkfire.github.io/frontend/patterns/pattern/</loc>
+    <loc>https://getlinkfire.github.io/frontend/patterns/ember/components/</loc>
+  </url>
+  
+  <url>
+    <loc>https://getlinkfire.github.io/frontend/print-version/</loc>
+  </url>
+  
+  <url>
+    <loc>https://getlinkfire.github.io/frontend/tags/ember/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://getlinkfire.github.io/frontend/</loc>
+  </url>
+  
+  <url>
+    <loc>https://getlinkfire.github.io/frontend/tags/linting/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://getlinkfire.github.io/frontend/patterns/linting/linting/</loc>
   </url>
   
   <url>
@@ -36,7 +54,7 @@
   </url>
   
   <url>
-    <loc>https://getlinkfire.github.io/frontend/</loc>
+    <loc>https://getlinkfire.github.io/frontend/patterns/architecture/</loc>
   </url>
   
 </urlset>
