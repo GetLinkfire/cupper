@@ -35,6 +35,10 @@
   </url>
   
   <url>
+    <loc>https://getlinkfire.github.io/frontend/patterns/ember/testing/</loc>
+  </url>
+  
+  <url>
     <loc>https://getlinkfire.github.io/frontend/tags/ember/</loc>
     <priority>0</priority>
   </url>

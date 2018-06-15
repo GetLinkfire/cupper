@@ -43,6 +43,17 @@ Meet {{@name}}, his catchphrase is {{@catchphrase}}</description>
     </item>
     
     <item>
+      <title>Data Loading</title>
+      <link>https://getlinkfire.github.io/frontend/patterns/ember/testing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://getlinkfire.github.io/frontend/patterns/ember/testing/</guid>
+      <description> Tools For testing in Ember we use QUnit together with Polly.js.
+QUnit QUnit is the standard test framework for Ember.js which means that we all benefit from
+Test Approach </description>
+    </item>
+    
+    <item>
       <title>Linting</title>
       <link>https://getlinkfire.github.io/frontend/patterns/linting/linting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

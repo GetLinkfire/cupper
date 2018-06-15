@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="canonical" href="https://getlinkfire.github.io/frontend/patterns/linting/linting/">
+    <link rel="canonical" href="https://getlinkfire.github.io/frontend/patterns/ember/testing/">
     <link rel="apple-touch-icon" sizes="57x57" href="https://getlinkfire.github.io/frontend/images/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="https://getlinkfire.github.io/frontend/images/apple-touch-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="https://getlinkfire.github.io/frontend/images/apple-touch-icon-72x72.png">
@@ -30,7 +30,7 @@
     </style>
     <title>
       
-        Linting | Linkfire Frontend Guidelines
+        Data Loading | Linkfire Frontend Guidelines
       
     </title>
     
@@ -184,7 +184,7 @@
                             </li>
                           
                             <li class="pattern">
-                              <a href="https://getlinkfire.github.io/frontend/patterns/ember/data/" >
+                              <a href="https://getlinkfire.github.io/frontend/patterns/ember/data/" aria-current="page">
                                 <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
                                   <use xlink:href="#bookmark"></use>
                                 </svg>
@@ -193,7 +193,7 @@
                             </li>
                           
                             <li class="pattern">
-                              <a href="https://getlinkfire.github.io/frontend/patterns/ember/testing/" >
+                              <a href="https://getlinkfire.github.io/frontend/patterns/ember/testing/" aria-current="page">
                                 <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
                                   <use xlink:href="#bookmark"></use>
                                 </svg>
@@ -209,7 +209,7 @@
                         <ul>
                           
                             <li class="pattern">
-                              <a href="https://getlinkfire.github.io/frontend/patterns/linting/linting/" aria-current="page">
+                              <a href="https://getlinkfire.github.io/frontend/patterns/linting/linting/" >
                                 <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
                                   <use xlink:href="#bookmark"></use>
                                 </svg>
@@ -234,7 +234,7 @@
       <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
         <use xlink:href="#bookmark"></use>
       </svg>
-      Linting
+      Data Loading
     </h1>
     
       <div class="tags">
@@ -245,7 +245,7 @@
               <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
                 <use xlink:href="#tag"></use>
               </svg>
-              <a href="https://getlinkfire.github.io/frontend/tags/linting">linting</a>
+              <a href="https://getlinkfire.github.io/frontend/tags/data">data</a>
             </li>
           
             <li>
@@ -266,26 +266,20 @@
     <ol>
       
         <li>
-          <a href="#general-javascript-linting">
-            General JavaScript Linting
+          <a href="#tools">
+            Tools
           </a>
         </li>
       
         <li>
-          <a href="#ember-linting">
-            Ember Linting
+          <a href="#qunit">
+            QUnit
           </a>
         </li>
       
         <li>
-          <a href="#handlebars">
-            Handlebars
-          </a>
-        </li>
-      
-        <li>
-          <a href="#css">
-            CSS
+          <a href="#test-approach">
+            Test Approach
           </a>
         </li>
       
@@ -296,230 +290,15 @@
     
     
 
-<h2 id="general-javascript-linting">General JavaScript Linting</h2>
+<h2 id="tools">Tools</h2>
 
-<p>eslint is used for JavaScript linting: <a href="https://eslint.org/">https://eslint.org/</a></p>
+<p>For testing in Ember we use <a href="https://qunitjs.com/">QUnit</a> together with <a href="https://netflix.github.io/pollyjs/#/README">Polly.js</a>.</p>
 
-<p>Required plugins are as follows:
-    <a href="https://github.com/sindresorhus/eslint-plugin-unicorn">eslint-plugin-unicorn</a>
-    <a href="https://github.com/k03mad/eslint-plugin-const-case">eslint-plugin-const-case</a></p>
+<h2 id="qunit">QUnit</h2>
 
-<p>.eslintrc.js</p>
+<p>QUnit is the standard test framework for Ember.js which means that we all benefit from</p>
 
-<pre><code class="language-js">module.exports = {
-  plugins: [
-    'const-case',
-    'unicorn'
-  ],
-  extends: [
-    'eslint:recommended',
-    'plugin:unicorn/recommended'
-  ],
-  rules: {
-    'operator-linebreak': ['error', 'after'],
-    'no-useless-escape': 'off',
-    'const-case/uppercase': 'error',
-
-    'capitalized-comments': ['error', 'always'],
-    'no-inline-comments': 'error',
-
-    'no-lonely-if': 'error',
-    'no-mixed-operators': 'error',
-    'no-mixed-spaces-and-tabs': 'error',
-    'no-tabs': 'error',
-    'no-multiple-empty-lines': ['error', { max: 1 }],
-    'no-nested-ternary': 'error',
-    'no-negated-condition': 'error',
-    'no-unneeded-ternary': 'error',
-    'no-whitespace-before-property': 'error',
-
-    'nonblock-statement-body-position': ['error', 'beside'],
-    'key-spacing': ['error', { 'mode': 'strict' }],
-    'implicit-arrow-linebreak': ['error', 'beside'],
-    'newline-per-chained-call': ['error', { 'ignoreChainWithDepth': 2 }],
-    'padded-blocks': ['error', 'never'],
-    'lines-between-class-members': [
-      'error',
-      'always',
-      { 'exceptAfterSingleLine': true }
-    ],
-    'padding-line-between-statements': [
-      'error',
-      { 'blankLine': 'always', 'prev': 'multiline-block-like', 'next': '*' },
-      { 'blankLine': 'always', 'prev': 'multiline-expression', 'next': '*' },
-      { 'blankLine': 'always', 'prev': 'let', 'next': '*' },
-      { 'blankLine': 'always', 'prev': '*', 'next': 'let' },
-      { 'blankLine': 'never', 'prev': 'let', 'next': 'let' },
-
-      { 'blankLine': 'always', 'prev': '*', 'next': 'if' },
-      { 'blankLine': 'always', 'prev': '*', 'next': 'for' },
-      { 'blankLine': 'always', 'prev': '*', 'next': 'while' },
-      { 'blankLine': 'always', 'prev': '*', 'next': 'do' },
-      { 'blankLine': 'always', 'prev': '*', 'next': 'switch' },
-      { 'blankLine': 'always', 'prev': '*', 'next': 'try' },
-      { 'blankLine': 'always', 'prev': '*', 'next': 'throw' },
-      { 'blankLine': 'always', 'prev': '*', 'next': 'return' }
-    ],
-    'array-bracket-newline': [
-      'error',
-      'consistent'
-    ],
-    'object-curly-newline': [
-      'error',
-      {
-        'ObjectExpression': { 'minProperties': 3, 'consistent': true },
-        'ObjectPattern': { 'minProperties': 3 },
-        'ImportDeclaration': { 'minProperties': 3 },
-        'ExportDeclaration': { 'minProperties': 3 }
-      }
-    ]
-  }
-};
-</code></pre>
-
-<h2 id="ember-linting">Ember Linting</h2>
-
-<p>Required plugins are as follows:</p>
-
-<pre><code>[eslint-plugin-ember](https://github.com/ember-cli/eslint-plugin-ember)
-[eslint-plugin-ember-best-practices](https://github.com/ember-best-practices/eslint-plugin-ember-best-practices)
-[eslint-plugin-ember-suave](https://github.com/DockYard/eslint-plugin-ember-suave)
-</code></pre>
-
-<p>.eslintrc</p>
-
-<pre><code class="language-js">module.exports = {
-  plugins: [
-    'ember',
-  ],
-  extends: [
-    'plugin:ember-suave/recommended',
-    'plugin:ember-best-practices/recommended'
-  ],
-  rules: {
-    'ember-best-practices/no-attrs-snapshot': 'error',
-    'ember-best-practices/no-attrs': 'error',
-    'ember-best-practices/no-broken-super-chain': 'error',
-    'ember-best-practices/no-lifecycle-events': 'error',
-    'ember-best-practices/no-global-jquery': 'off', // Will be covered in `eslint-plugin-ember` below
-    'ember-best-practices/no-observers': 'error',
-    'ember-best-practices/no-send-action': 'error',
-    'ember-best-practices/no-side-effect-cp': 'error',
-    'ember-best-practices/require-dependent-keys': 'error',
-
-    'ember/alias-model-in-controller': 'error',
-    'ember/new-module-imports': 'error',
-    'ember/no-capital-letters-in-routes': 'error',
-    'ember/no-duplicate-dependent-keys': 'error',
-    'ember/no-empty-attrs': 'off',
-    'ember/no-global-jquery': 'error',
-    'ember/no-old-shims': 'error',
-    'ember/no-side-effects': 'off',
-    'ember/order-in-components': 'error',
-    'ember/order-in-controllers': 'error',
-    'ember/order-in-models': 'error',
-    'ember/order-in-routes': 'error',
-    'ember/routes-segments-snake-case': 'error',
-    'ember/use-brace-expansion': 'error',
-    'ember/use-ember-get-and-set': 'error'
-  }
-};
-</code></pre>
-
-<h2 id="handlebars">Handlebars</h2>
-
-<p>Linter</p>
-
-<p>ember-template-lint is used for Handlebars linting: <a href="https://github.com/ember-template-lint/ember-template-lint">https://github.com/ember-template-lint/ember-template-lint</a></p>
-
-<p>Please also install ember-cli-template-lint as described in the readme for ember-template-lint.</p>
-
-<p>.template-lintrc.js</p>
-
-<pre><code class="language-js">
-/* eslint-env node */
-'use strict';
-
-module.exports = {
-  extends: 'recommended',
-
-  rules: {
-    'attribute-indentation': { 'open-invocation-max-len': 100 },
-    'no-bare-strings': true,
-    'inline-link-to': true,
-    'no-inline-styles': true,
-    'no-duplicate-attributes': true,
-    'no-input-block': true,
-    'no-input-tagname': true,
-    'no-outlet-outside-routes': true,
-    'no-partial': true,
-    'no-trailing-spaces': true,
-    'no-unbound': true,
-    'quotes': 'single',
-    'table-groups': true,
-    'template-length': { max: 200, min: 1 }
-  }
-};
-</code></pre>
-
-<h2 id="css">CSS</h2>
-
-<p>Linter</p>
-
-<p>stylelint is used for CSS linting: <a href="https://stylelint.io/">https://stylelint.io/</a></p>
-
-<p>Required plugins are as follows:</p>
-
-<pre><code>[stylelint-selector-bem-pattern](https://github.com/simonsmith/stylelint-selector-bem-pattern)
-</code></pre>
-
-<p>.stylelintrc</p>
-
-<pre><code class="language-js">{
-  'plugins': [
-    'stylelint-selector-bem-pattern'
-  ],
-  'rules': {
-    'plugin/selector-bem-pattern': {
-      'componentName': '[A-Z]+',
-      'componentSelectors': {
-        'initial': '^\\.{componentName}(?:-[a-z]+)?$',
-        'combined': '^\\.combined-{componentName}-[a-z]+$'
-      },
-      'utilitySelectors': '^\\.util-[a-z]+$',
-      'implicitComponents': true
-    },
-    'number-leading-zero': 'always',
-    'indentation': 2,
-    'string-quotes': 'single',
-    'color-no-hex': true,
-
-    'declaration-block-trailing-semicolon': 'always',
-    'declaration-block-semicolon-newline-after': 'always',
-    'comment-whitespace-inside': 'always',
-    'comment-empty-line-before': [
-      'always',
-      'except': ['first-nested']
-    ],
-    'block-closing-brace-empty-line-before': 'never',
-    'block-closing-brace-newline-after': 'always',
-    'block-closing-brace-newline-before': 'always',
-    'block-opening-brace-newline-after': 'always',
-    'block-opening-brace-space-before': 'always',
-    'rule-empty-line-before': [
-      'always-multi-line',
-      'except': ['first-nested', 'after-single-line-comment']
-    ],
-    'at-rule-empty-line-before': [
-      'always',
-      except: ['first-nested', 'blockless-after-same-name-blockless'],
-      ignore: ['after-comment']
-    ],
-
-    'selector-list-comma-newline-after': 'always'
-  }
-}
-</code></pre>
+<h2 id="test-approach">Test Approach</h2>
 
   </main>
 
